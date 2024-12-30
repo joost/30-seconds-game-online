@@ -1,0 +1,9 @@
+{
+  "cards": [
+    ["Apple", "Bicycle", "Paris", "Mount Everest", "Shakespeare"],
+    ["Tree", "Laptop", "Africa", "Einstein", "Tornado"],
+    ["Lion", "Telephone", "Sydney", "Amazon River", "Mozart"],
+    ["Football", "Camera", "Hollywood", "Tesla", "Great Wall"],
+    ["Horse", "Piano", "China", "Walt Disney", "Chocolate"]
+  ]
+}
