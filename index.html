@@ -83,14 +83,6 @@
         padding: 1rem;
       }
 
-      /* Center text in the "back" just for demonstration */
-      .back .card-body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
-
       /* Timer text (larger, centered) */
       #timerValue {
         font-size: 2rem;
@@ -112,7 +104,7 @@
         <!-- FRONT FACE -->
         <div class="front d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title text-center">Describe These!</h5>
+            <!-- Removed “Describe These!” here -->
             <ul class="list-group mb-3" id="cardItems"></ul>
           </div>
           <div class="p-2">
@@ -132,11 +124,17 @@
           </div>
         </div>
 
-        <!-- BACK FACE (Example: Next Card or "Time's up!") -->
+        <!-- BACK FACE -->
         <div class="back d-flex flex-column">
           <div class="card-body">
-            <h5 class="card-title">Time is up!</h5>
-            <p>Tap again for the next card.</p>
+            <div class="mb-3">
+              <h5 class="card-title">Time is up!</h5>
+              <p>Now pick your next card or go back.</p>
+            </div>
+            <div class="d-flex justify-content-around">
+              <button id="btnBack" class="btn btn-secondary">Back</button>
+              <button id="btnNext" class="btn btn-primary">Next</button>
+            </div>
           </div>
         </div>
       </div>
@@ -157,13 +155,16 @@
       const timerValue = document.getElementById("timerValue");
       const timerBar = document.getElementById("timerBar");
 
+      const btnBack = document.getElementById("btnBack");
+      const btnNext = document.getElementById("btnNext");
+
       // 1) Fetch the cards.json data
       fetch("cards.json")
         .then((response) => response.json())
         .then((data) => {
           cardsData = data.cards; // Array of arrays
           // Show first card
-          showCard(0);
+          showCard(currentCardIndex);
           // Start the timer
           startTimer();
         })
@@ -201,11 +202,10 @@
             // Timer ended: flip the card to show the "back"
             flipCard();
 
-            // Wait a moment, then move on to the next card
+            // Wait a moment, then automatically go to next card
             setTimeout(() => {
               // Flip back so user sees the new front
               flipCard();
-              // Move to next card
               currentCardIndex++;
               if (currentCardIndex < cardsData.length) {
                 showCard(currentCardIndex);
@@ -233,15 +233,53 @@
         timerBar.setAttribute("aria-valuenow", pct);
       }
 
-      // 5) Flip the card on click/tap
+      // 5) Flip the card on front/back click
       cardFlipper.addEventListener("click", () => {
-        // If the timer hasn’t ended, you could allow flipping manually:
-        flipCard();
+        // Optionally allow manual flipping from front to back or vice versa
+        // (If you only want the back to be shown on timer-end, remove this.)
+        // flipCard();
       });
 
       function flipCard() {
         cardFlipper.classList.toggle("flipped");
       }
+
+      // 6) Button handlers on BACK face
+      btnBack.addEventListener("click", () => {
+        // Flip to front (if currently on back)
+        if (cardFlipper.classList.contains("flipped")) {
+          flipCard();
+        }
+      });
+
+      btnNext.addEventListener("click", () => {
+        // Go to next card
+        currentCardIndex++;
+        if (currentCardIndex < cardsData.length) {
+          // Show next card
+          showCard(currentCardIndex);
+          // Reset the timer
+          timeRemaining = TIME_LIMIT;
+          updateTimerUI();
+          // Optionally restart the interval if you want a new 30s
+          if (!intervalId) {
+            // If the timer was cleared, we start it again
+            startTimer();
+          }
+          // Flip to front if we’re currently on the back
+          if (cardFlipper.classList.contains("flipped")) {
+            flipCard();
+          }
+        } else {
+          // All cards done
+          clearInterval(intervalId);
+          cardItems.innerHTML = `<li class="list-group-item">Game Over</li>`;
+          // Flip to front if you’d like
+          if (cardFlipper.classList.contains("flipped")) {
+            flipCard();
+          }
+        }
+      });
     </script>
   </body>
 </html>
