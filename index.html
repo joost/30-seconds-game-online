@@ -87,6 +87,23 @@
         transform: rotateY(180deg);
       }
 
+      /* List items styling */
+      .list-group-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Info icon styling */
+      .list-group-item a {
+        text-decoration: none;
+        font-size: 1.2rem; /* Adjust icon size */
+        color: #007bff; /* Bootstrap primary color */
+      }
+
+      .list-group-item a:hover {
+        color: #0056b3; /* Hover color */
+      }
       /* Front and Back faces of the card */
       .front,
       .back {
@@ -281,9 +298,29 @@
         cardItems.innerHTML = "";
         const currentItems = cardsData[index];
         currentItems.forEach((item) => {
+          // Create a list item
           const li = document.createElement("li");
-          li.className = "list-group-item";
-          li.textContent = item;
+          li.className =
+            "list-group-item d-flex align-items-center justify-content-between";
+
+          // Add the word
+          const wordSpan = document.createElement("span");
+          wordSpan.textContent = item;
+
+          // Add the info icon
+          const infoIcon = document.createElement("a");
+          infoIcon.href = `https://www.google.com/search?q=${encodeURIComponent(
+            item
+          )}`;
+          infoIcon.target = "_blank";
+          infoIcon.rel = "noopener noreferrer";
+          infoIcon.innerHTML = "🔍"; // Replace with an actual icon if needed
+
+          // Append word and icon to the list item
+          li.appendChild(wordSpan);
+          li.appendChild(infoIcon);
+
+          // Add the list item to the cardItems container
           cardItems.appendChild(li);
         });
       }

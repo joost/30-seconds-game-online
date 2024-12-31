@@ -2,6 +2,10 @@
 
 The game is played with two or more teams of at least two players. Each round one player picks a card and has 30 seconds to describe the five objects, people or places written on the card without revealing the card or saying any part of the name.
 
+## Play online
+
+Visit https://joost.github.io/30-seconds-game-online to play online.
+
 ## Local development
 
     python3 -m http.server 8080
