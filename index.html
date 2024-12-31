@@ -256,9 +256,7 @@
                 <p>Pick your next card or go back.</p>
               </div>
               <div class="d-flex justify-content-around">
-                <button id="btnBack" class="btn btn-secondary">
-                  Flip back
-                </button>
+                <button id="btnBack" class="btn btn-secondary">Back</button>
                 <button id="btnNext" class="btn btn-primary">Next</button>
               </div>
             </div>
@@ -269,9 +267,14 @@
 
     <!-- Footer -->
     <div class="footer d-flex justify-content-center">
-      <a id="addToHomeScreen" href="#">Bookmark</a>
-      <a id="shareLink" href="#">Share</a>
-      <a href="https://github.com/joost/30-seconds-game-online" target="_blank"
+      <a id="addToHomeScreen" class="btn btn-sm btn-link text-muted"
+        >Bookmark</a
+      >
+      <a id="shareLink" class="btn btn-sm btn-link text-muted">Share</a>
+      <a
+        href="https://github.com/joost/30-seconds-game-online"
+        target="_blank"
+        class="btn btn-sm btn-link text-muted"
         >GitHub</a
       >
     </div>
@@ -480,19 +483,18 @@
 
       // Listen for the `beforeinstallprompt` event (only works on supported browsers)
       window.addEventListener("beforeinstallprompt", (e) => {
-        // Prevent the default mini-infobar
+        // Prevent the default mini-infobar from showing
         e.preventDefault();
 
         // Save the event for later use
         deferredPrompt = e;
 
-        // Show the "Add to Home Screen" button
-        addToHomeScreenButton.style.display = "block";
+        // Show the "Add to Home Screen" link
+        bookmarkLink.style.display = "inline-block";
 
-        // Add click event to trigger the prompt
-        addToHomeScreenButton.addEventListener("click", async () => {
-          // Hide the button
-          addToHomeScreenButton.style.display = "none";
+        // Add click event for the "Add to Home Screen" link
+        bookmarkLink.addEventListener("click", async (event) => {
+          event.preventDefault();
 
           // Show the install prompt
           deferredPrompt.prompt();
