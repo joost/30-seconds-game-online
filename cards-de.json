@@ -2,6 +2,268 @@
   "cards": [
     ["Berlin", "Bratwurst", "Oktoberfest", "Volkswagen", "Goethe"],
     ["Bier", "Schloss Neuschwanstein", "Bayern", "Currywurst", "Fußball"],
-    ["Weihnachtsmarkt", "Hamburg", "Schwarzwald", "Frankfurt", "Beethoven"]
+    ["Weihnachtsmarkt", "Hamburg", "Schwarzwald", "Frankfurt", "Beethoven"],
+    ["Apfel", "Fahrrad", "Paris", "Mount Everest", "Shakespeare"],
+    ["Baum", "Laptop", "Afrika", "Einstein", "Tornado"],
+    ["Löwe", "Telefon", "Sydney", "Amazonas", "Mozart"],
+    ["Fußball", "Kamera", "Hollywood", "Tesla", "Chinesische Mauer"],
+    ["Pferd", "Klavier", "China", "Walt Disney", "Schokolade"],
+    ["Baum", "Zug", "Hamburger", "Michelangelo", "Sahara"],
+    ["Sonne", "Handy", "Kenia", "Aristoteles", "Hubschrauber"],
+    ["Yacht", "Gitarrist", "Brasilien", "Galileo", "Wolkenkratzer"],
+    ["Seehund", "Flugzeug", "Himalaya", "Napoleon", "Museum"],
+    ["Bleistift", "Segelboot", "Tokio", "Churchill", "Papagei"],
+    ["Apfelbaum", "Motorrad", "Rom", "Kleopatra", "Rugbyball"],
+    ["Strand", "Taschenlampe", "Indien", "Leonardo da Vinci", "Ballerina"],
+    ["Kuh", "Mikrofon", "New York", "Mandela", "Taucherbrille"],
+    ["Känguru", "Bus", "Moskau", "Van Gogh", "Chirurg"],
+    ["Elefant", "Kopfhörer", "Toronto", "Abraham Lincoln", "Kühlschrank"],
+    ["Pizza", "Krankenwagen", "Prag", "Gandhi", "Spiegel"],
+    ["Erdbeere", "Koffer", "Kapstadt", "Albert Heijn", "Hüpfball"],
+    ["Kamel", "Roller", "Barcelona", "Pythagoras", "Pinsel"],
+    ["Hurrikan", "Straßenmusiker", "Dubai", "Malala", "Thermometer"],
+    ["Zebra", "Waschmaschine", "Venedig", "Charlie Chaplin", "Schloss"],
+    ["Karotte", "Spielkonsole", "Amsterdam", "Picasso", "Regenbogen"],
+    ["Knoblauch", "Helm", "Bali", "Julius Cäsar", "Bauernhof"],
+    ["Ente", "Rakete", "Stonehenge", "Martin Luther King", "Nähmaschine"],
+    ["Taschenmesser", "Gondel", "Berliner Mauer", "Mahatma Gandhi", "Flamingo"],
+    ["Giraffe", "Busticket", "Mount Fuji", "Freddy Mercury", "Schwert"],
+    ["Papier", "Dinosaurier", "Eiffelturm", "Kolumbus", "Weihnachtsbaum"],
+    ["Gitarre", "Pinguin", "Florenz", "Isaac Newton", "Schlossgespenst"],
+    [
+      "Badewanne",
+      "Skateboard",
+      "Nordpol",
+      "Königin Elizabeth",
+      "Krümelmonster"
+    ],
+    [
+      "Ventilator",
+      "Känguru-Boxen",
+      "Bora Bora",
+      "Steven Spielberg",
+      "Farbrolle"
+    ],
+    ["Salat", "Hubschrauber", "Niagarafälle", "Marie Curie", "Kreuzung"],
+    ["Chamäleon", "Schlüsselanhänger", "Santorin", "Platon", "Maisfeld"],
+    ["Wal", "Sonnenbrille", "Yellowstone", "Gutenberg", "Spielkarten"],
+    ["Wüstenrose", "Fernglas", "Madagaskar", "Beethoven", "Hängematte"],
+    [
+      "Laterne",
+      "Rollschuhe",
+      "Uluru (Ayers Rock)",
+      "Winston Churchill",
+      "Taschentuch"
+    ],
+    ["Holzlöffel", "Surfbrett", "Kopenhagen", "Thor", "Regenmantel"],
+    ["Osterei", "Rasenmäher", "Edinburgh", "Florence Nightingale", "Kokosnuss"],
+    ["Seepferdchen", "Heliumballon", "Versailles", "Karl Marx", "Schachbrett"],
+    ["Papyrus", "Mikrowelle", "Galápagos", "Usain Bolt", "Latzhose"],
+    ["Trompete", "Elektroauto", "Transsibirische Eisenbahn", "Homer", "U-Boot"],
+    [
+      "Schildkröte",
+      "Geige",
+      "Madison Square Garden",
+      "Mutter Teresa",
+      "Picknickkorb"
+    ],
+    ["Ameise", "Walkie-Talkie", "Machu Picchu", "Beatrix Potter", "Sandburg"],
+    ["Kreuzung", "Tablet", "Peking", "Elvis Presley", "Schneemann"],
+    ["Eichhörnchen", "Fön", "Niagarafälle", "Kon-Tiki", "Muschel"],
+    [
+      "Kirsche",
+      "Kuckucksuhr",
+      "Mount Kilimandscharo",
+      "Johannes Vermeer",
+      "Hängematte"
+    ],
+    ["Krokodil", "Sparschwein", "Dubrovnik", "Marilyn Monroe", "Mülleimer"],
+    ["Papagei", "Drohne", "Antarktis", "Spinoza", "Joghurt"],
+    [
+      "Lagerfeuer",
+      "Digitalpiano",
+      "Versailles",
+      "Alexander der Große",
+      "Terminkalender"
+    ],
+    [
+      "Fledermaus",
+      "Ventilator (elektrisch)",
+      "San Francisco",
+      "Mark Twain",
+      "Freizeitpark"
+    ],
+    ["Kaffeetasse", "Staubsauger", "Sibirien", "Louis Pasteur", "Mondlandung"],
+    ["Kastanie", "Flöte", "Monte Carlo", "Elon Musk", "Sauerstoffmaske"],
+    ["Stundenglas", "Rennwagen", "Olymp", "Lady Gaga", "Pyramide"],
+    [
+      "Tulpenzwiebel",
+      "Walkman",
+      "Skandinavischer Wald",
+      "Prinzessin Beatrix",
+      "Kurier"
+    ],
+    ["Paprika-Chips", "Kaktus", "Monsun", "Goethe", "Pharao"],
+    [
+      "Gummistiefel",
+      "Raumfähre",
+      "Mexiko-Stadt",
+      "Stephen Hawking",
+      "Heuballen"
+    ],
+    ["Schnecke", "Smartwatch", "Taj Mahal", "Jane Austen", "Kettenkarussell"],
+    ["Wassermelone", "Taschentuch", "Panamakanal", "Elton John", "Handfeger"],
+    ["Hummer", "Tastatur", "Zoo von San Diego", "Isaac Asimov", "Rutsche"],
+    ["Musket", "Inliner", "Ed Sheeran", "Ätna", "Poncho"],
+    [
+      "Eierkuchen",
+      "Laptopständer",
+      "Polarkreis",
+      "Neil Armstrong",
+      "Spielzeugauto"
+    ],
+    [
+      "Schaf",
+      "Glühbirne",
+      "Pearl Harbor",
+      "Florence Griffith Joyner",
+      "Vorhängeschloss"
+    ],
+    ["Papagei", "Mikrochip", "Seoul", "Kim Kardashian", "Anspitzer"],
+    ["Rotkohl", "Grapefruit", "Lagerfeuer", "NikkieTutorials", "Whistleblower"],
+    ["Teddybär", "Laserpointer", "Wintersport", "Anne Frank", "Zauberring"],
+    [
+      "Eiswürfel",
+      "Waffeleisen",
+      "Disneyland Paris",
+      "Vincent van Gogh",
+      "Kloster"
+    ],
+    [
+      "Kaffeemaschine",
+      "Wasserpistole",
+      "Grand Canyon",
+      "Rembrandt",
+      "Mona Lisa"
+    ],
+    ["Meerjungfrau", "Supermarkt", "Pjöngjang", "Justin Bieber", "Schubkarre"],
+    ["Armband", "Gießkanne", "Erster Weltkrieg", "Roald Dahl", "Schneeball"],
+    ["Bienenstock", "Trampolin", "Mount Rushmore", "J.K. Rowling", "Puzzle"],
+    [
+      "Fischglas",
+      "Digitaler Wecker",
+      "Vatikanstadt",
+      "Stephen King",
+      "Espressomaschine"
+    ],
+    ["Hamster", "Baseball", "Rio de Janeiro", "Oscar Wilde", "Rucksack"],
+    [
+      "Nussknacker",
+      "Thermoskanne",
+      "Schwarzes Meer",
+      "Michel Foucault",
+      "Leere Flasche"
+    ],
+    ["Feder", "E-Reader", "Barcelona", "Hugo Grotius", "Schaukelstuhl"],
+    ["Kokosnuss", "Drucker", "Nordpol", "Adele", "Trommel"],
+    ["Bratpfanne", "Bluetooth-Lautsprecher", "Namibia", "Freud", "Leinwand"],
+    ["Lippenstift", "Rennrad", "Himalaya", "Amelia Earhart", "Lichtschalter"],
+    ["Handtuch", "VR-Brille", "Sahara", "Frida Kahlo", "Essstäbchen"],
+    ["Kopfhörer", "Basketball", "Mount Fuji", "Papst Franziskus", "Bügeleisen"],
+    [
+      "Erdnussbutter",
+      "Stromkabel",
+      "Svalbard",
+      "Armin van Buuren",
+      "Backstein"
+    ],
+    [
+      "Bürostuhl",
+      "Nintendo Switch",
+      "Machu Picchu",
+      "Nikola Tesla",
+      "Bumerang"
+    ],
+    ["Kniestrumpf", "Milchkarton", "Los Angeles", "David Bowie", "Globus"],
+    ["Sushi", "Tischlampe", "Inselgruppe", "Rose", "Timbuktu"],
+    ["Boxsack", "Mundharmonika", "Carcassonne", "Michael Jackson", "Kochbuch"],
+    [
+      "Messbecher",
+      "Schlüsselanhänger",
+      "Polarlicht",
+      "Wilhelm von Oranien",
+      "Metronom"
+    ],
+    [
+      "Kapsalon (Niederländisches Gericht)",
+      "Taschenrechner",
+      "Yellowstone-Nationalpark",
+      "Kapitän Cook",
+      "Sauerkraut"
+    ],
+    ["Bettdecke", "GoPro", "Côte d’Azur", "Serena Williams", "Kaffeebohnen"],
+    ["Gießkanne", "Baseballkappe", "Uluru", "Audrey Hepburn", "Heißluftballon"],
+    ["Satéspieß", "Schachuhr", "Osterinsel", "Nelson Mandela", "Klebeband"],
+    ["Wäscheständer", "Jetpack", "Denali", "Cristiano Ronaldo", "Gehstock"],
+    [
+      "Gottesanbeterin",
+      "Mehrwegbecher",
+      "Fiordland",
+      "Meryl Streep",
+      "Taschenuhr"
+    ],
+    ["Flummi", "Zahlenschloss", "Temse (Belgien)", "Beyoncé", "Golfschläger"],
+    ["Schlüsselanhänger", "Safe", "Serengeti", "Jan Smit", "Segelflugzeug"],
+    ["Känguru", "Fernseher", "Watteninseln", "Erasmus", "Fahrradreifen"],
+    [
+      "Traumfänger",
+      "Heißluftfritteuse",
+      "Costa Brava",
+      "Michelin-Sternekoch",
+      "Haartrockner"
+    ],
+    [
+      "Strandstuhl",
+      "3D-Drucker",
+      "Luftwaffenstützpunkt",
+      "Brad Pitt",
+      "Plastiktüte"
+    ],
+    [
+      "Klinge",
+      "Stethoskop",
+      "Transsilvanien",
+      "Shaquille O’Neal",
+      "Schlüsselbund"
+    ],
+    [
+      "Solarmodul",
+      "Tauchcomputer",
+      "Christusstatue in Rio",
+      "Sophia Loren",
+      "Schraubenzieher"
+    ],
+    [
+      "Eishockeyschläger",
+      "Filmkamera",
+      "Vesuv",
+      "König Willem-Alexander",
+      "Seifenblase"
+    ],
+    ["Vogelscheuche", "Jeans", "Stonehenge", "Angela Merkel", "Ofenhandschuh"],
+    [
+      "Gitarrengriff",
+      "Handyladegerät",
+      "Viktoriafälle",
+      "Lionel Messi",
+      "Tagebuch"
+    ],
+    [
+      "Grapefruit",
+      "Trommelstock",
+      "Sydney Opera House",
+      "Greta Thunberg",
+      "Flaschenpost"
+    ]
   ]
 }
